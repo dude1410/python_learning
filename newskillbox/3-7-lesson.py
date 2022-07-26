@@ -47,3 +47,35 @@ speed = int(input("Введите скорогсть поездки: "))
 distance = time * speed
 mark = distance % 115
 print("Cycle stopped at km =", mark)
+
+# *******************************************
+# 8
+number_to_split = int(input("Введите число: "))
+print(number_to_split // 1000)
+a = number_to_split % 1000
+print(a // 100)
+b = a % 100
+print(b // 10)
+print(b % 10)
+
+# *********************************************
+# 9
+number_to_invert = int(input("Введите число: "))
+print(number_to_invert % 10)
+a = number_to_invert // 10
+print(a % 10)
+b = a // 10
+print(b % 10)
+print(b // 10)
+
+# *****************************************
+# 10
+a = int(input('Введите первое число: '))
+b = int(input('Введите второе число: '))
+print(a, b)
+
+a = a + b
+b = a - b
+a = a - b
+
+print(a, b)
