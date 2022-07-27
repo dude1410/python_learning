@@ -61,12 +61,13 @@ print(b % 10)
 # *********************************************
 # 9
 number_to_invert = int(input("Введите число: "))
-print(number_to_invert % 10)
+b_1 = number_to_invert % 10
 a = number_to_invert // 10
-print(a % 10)
+b_2 = a % 10
 b = a // 10
-print(b % 10)
-print(b // 10)
+b_3 = b % 10
+b_4 = b // 10
+print(b_1 * 1000 + b_2 * 100 + b_3 * 10 + b_4)
 
 # *****************************************
 # 10
