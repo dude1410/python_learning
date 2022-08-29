@@ -22,7 +22,7 @@ speed = 5
 
 my_list = []
 for _ in range(N):
-    my_tuple = list((random.randint(100, 1000), random.randint(300, 1000), random.randint(10, 50), random.randint(1, 5)))
+    my_tuple = list((random.randint(100, 1300), random.randint(300, 1300), random.randint(10, 50), random.randint(1, 5)))
     my_list.append(my_tuple)
 
 def get_random():
@@ -46,7 +46,7 @@ while True:
         item[0] = item[0] + item[3] * get_random()
         item[1] = item[1] - speed
 
-    sd.sleep(0.1)
+    sd.sleep(0.15)
     if sd.user_want_exit():
         break
 
