@@ -114,18 +114,18 @@
 # print("Вы угадали! Число попыток:", attempts)
 
 # 10
-# lower_border = 1
-# upper_border = 100
-# count = 0
-# while True:
-#     count += 1
-#     guess = int((lower_border + upper_border) / 2)
-#     question = "Твоё число равно, меньше или больше, чем число " + str(guess) + "? (1 — равно, 2 — больше, 3 — меньше)"
-#     answer = int(input(question))
-#     if answer == 1:
-#         print("Ваше число", guess)
-#         break
-#     elif answer == 2:
-#         lower_border = guess
-#     elif answer == 3:
-#         upper_border = guess
+lower_border = 1
+upper_border = 100
+count = 0
+while True:
+    count += 1
+    guess = int((lower_border + upper_border) / 2)
+    question = "Твоё число равно, меньше или больше, чем число " + str(guess) + "? (1 — равно, 2 — больше, 3 — меньше)"
+    answer = int(input(question))
+    if answer == 1:
+        print("Ваше число", guess)
+        break
+    elif answer == 2:
+        lower_border = guess
+    elif answer == 3:
+        upper_border = guess
